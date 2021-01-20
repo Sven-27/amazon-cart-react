@@ -7,6 +7,7 @@
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #eaeded;
+  text-align: center;
 }
 
 .app__main{

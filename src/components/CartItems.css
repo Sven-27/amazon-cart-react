@@ -1,7 +1,11 @@
 .cartItems{
-    display: flex;
+    text-align: start;
     padding: 20px;
     background: #fff;
     flex: .7;
     margin-right: 18px;
+  }
+
+  .cartItems > h1{
+    padding-bottom: 12px;
   }
