@@ -1,0 +1,7 @@
+.header h1{
+    background: #0a2546;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; 
+   }
