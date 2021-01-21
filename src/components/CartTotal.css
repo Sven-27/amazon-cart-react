@@ -1,5 +1,29 @@
 .cartTotal{
     background: #fff;
-    height: 200px;
+    height: 150px;
     flex: .3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cartTotal__price{
+    margin-left: 10px;
+  }
+
+  .cartTotal__button{
+    background: #f0c14b;
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    border: 2px solid #a88734;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .cartTotal__button:hover{
+    background: #ddb347;
   }
