@@ -15,7 +15,7 @@ console.log(cartItems)
         </div>
         <div className="app__main">
               <CartItems items={cartItems} />
-              <CartTotal />
+              <CartTotal items={cartItems}/>
         </div>
     </div>
   );
