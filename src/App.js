@@ -14,7 +14,7 @@ console.log(cartItems)
              <Header title="Amazon Cart"/>
         </div>
         <div className="app__main">
-              <CartItems items={cartItems} />
+              <CartItems items={cartItems} setCartItems={setCartItems} />
               <CartTotal items={cartItems}/>
         </div>
     </div>
