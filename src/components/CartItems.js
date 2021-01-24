@@ -17,9 +17,9 @@ const changeItemQuantity = (e, index) => {
     setCartItems(newItems)
 }
 
-const deleteItem = (index) => {
+// const deleteItem = (index) => {
     
-}
+// }
 
 
     console.log('here are the items', items)

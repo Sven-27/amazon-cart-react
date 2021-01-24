@@ -2,8 +2,7 @@ import React from 'react'
 import './CartTotal.css'
 import NumberFormat from 'react-number-format';
 
-function CartTotal({items}) {
-
+function CartTotal({items}){
     const getTotalPrice = () => {
         let total = 0;
         items.forEach((item) => {
@@ -13,7 +12,13 @@ function CartTotal({items}) {
     }
 
     const getItemTotal = () => {
-   
+        let products = 0
+    
+        items.forEach((item)=> {
+            products += item.quantity
+        })
+           
+        return products
     }
 
     return (

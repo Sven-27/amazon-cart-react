@@ -14,13 +14,14 @@ function CartItem({index, item, changeItemQuantity}) {
                 <div className="cartItem__info__stock">{item.stock}</div>
                 <div className="cartItem__item__actions">
                     <div className="cartItem__item__quantity">
-                    <select onChange={(e)=>changeItemQuantity(e, index)} value={item.quantity} className="cartItem__select">
-                    <option value="1">Qty: 1</option>
-                    <option value="2">Qty: 2</option>
-                    <option value="3">Qty: 3</option>
-                    <option value="4">Qty: 4</option>
-                    <option value="5">Qty: 5</option>
-                    <option value="6">Qty: 6</option>
+                        <label htmlFor="num">Qty:</label>
+                    <select onChange={(e)=>changeItemQuantity(e, index)} id="num" value={item.quantity} className="cartItem__select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
                     </select>    
                     </div> 
                     <div className="cartItem__divider">|</div>
