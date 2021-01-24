@@ -1,7 +1,7 @@
 import React from 'react'
 import './CartItem.css'
 
-function CartItem({index, item, changeItemQuantity}) {
+function CartItem({index, item, changeItemQuantity, deleteItem}) {
     return (
         <div className="cartItem">
             <div className="cartItem__image">
@@ -14,18 +14,17 @@ function CartItem({index, item, changeItemQuantity}) {
                 <div className="cartItem__info__stock">{item.stock}</div>
                 <div className="cartItem__item__actions">
                     <div className="cartItem__item__quantity">
-                        <label htmlFor="num">Qty:</label>
                     <select onChange={(e)=>changeItemQuantity(e, index)} id="num" value={item.quantity} className="cartItem__select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
+                    <option value="1">Qty: 1</option>
+                    <option value="2">Qty: 2</option>
+                    <option value="3">Qty: 3</option>
+                    <option value="4">Qty: 4</option>
+                    <option value="5">Qty: 5</option>
+                    <option value="6">Qty: 6</option>
                     </select>    
                     </div> 
                     <div className="cartItem__divider">|</div>
-                    <div className="cartItem__item__delete">Delete</div>
+                    <div className="cartItem__item__delete" onClick={()=>deleteItem(index)}>Delete</div>
                 </div>
             </div>
             <div className="cartItem__price">{item.price}</div>

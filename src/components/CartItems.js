@@ -17,9 +17,13 @@ const changeItemQuantity = (e, index) => {
     setCartItems(newItems)
 }
 
-// const deleteItem = (index) => {
-    
-// }
+const deleteItem = (indexToDelete) => {
+    //filter out the itmens where the item index does not equal to the selected item 
+    const newItems = items.filter((value, index)=> {
+        return index !== indexToDelete
+    })
+    setCartItems(newItems)
+}
 
 
     console.log('here are the items', items)
@@ -29,7 +33,7 @@ const changeItemQuantity = (e, index) => {
             <hr/>
             <div className="cartItems__items">
              {items.map((item, index) => {
-               return <CartItem index={index} item={item} key={index} changeItemQuantity={changeItemQuantity} />
+               return <CartItem index={index} item={item} key={index} changeItemQuantity={changeItemQuantity} deleteItem={deleteItem} />
              })}
 
             </div>
